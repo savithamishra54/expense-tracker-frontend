@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
+    <script src="scrript.js"></script>
+</head>
+<nav class="nav">
+    <h1>Expense Tracker</h1>
+</nav>
+<body>
+    <div class="signup">
+        <form class="sign" onsubmit="createUser(event)">
+            <h3 class="signhead">Sign-Up</h3>
+            <label class="label">Enter Your Name:</label>
+            <input type="text" id="name" name="name" class="input" required>
+            <label class="label">Enter Your Email Id:</label>
+            <input type="email" id="email" name="email" class="input" required>
+            <label class="label">Create a Password:</label>
+            <input type="password" id="password" name="password" class="input" required>
+           <button type="submit" class="submitbtn">Submit</button>
+            <a href="./login.html" class="anchor">Login</a>
+        </form>
+        <footer class="footer">
+            <h3>© Copyright 2022, Expense Tracker.</h3>
+        </footer>
+    </div>
+   
+</body>
+
+</html

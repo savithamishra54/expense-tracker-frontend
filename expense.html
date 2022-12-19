@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title >My Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
+    <nav class="nav">
+        <h1 id="expnav">Expense Tracker</h1>
+       
+    </nav>
+</head>
+   
+<body class="expenseBody">
+    
+    <div class="wrapper">
+        <h1 id="headexp">Add Your Expense <style></style></h1>
+        <hr width="100%" size="6px" >
+   <label class="label" id="amnt">My Expense Amount:</label> 
+   <input type="number" id="amount" name="amount"><br>
+   <br>
+   <label  class="label" id="desc">Choose Description:</label> 
+    <input type="text" id="des" name="description"> <br>
+    <br>
+   <label class="label" id="cate">Choose a category:</label> 
+   <select    id="cat" name="category"> <br>
+    <option>Movie</option>
+    <option>Fuel</option>
+    <option>Food</option>
+    <option>Fashion</option>
+    <option>Miscellanous</option><br>
+<br>
+    <input type="button" value="Add Expense" onclick="addnewExpense(event)" id="addexpense">
+   
+    
+<h3 id="seeexp">Your Expenses Here...</h3>
+    <ul id="ul">
+        
+    </ul>
+    <button id="premiumbtn" onclick="gopremium(event)">Go Premium</button>
+    <ul id="pop">
+
+    </ul>
+   </div>
+   
+   <footer class="footer">
+    <h3>© Copyright 2022, Expense Tracker.</h3>
+</footer>
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
+   <script src="scrript.js"></script>
+   </body>
